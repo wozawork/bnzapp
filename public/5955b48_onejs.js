@@ -18,10 +18,7 @@
             return elem ? elem.getAttribute('content') : '';
         },
 
-        getCookie: (key) => {
-            let result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie);
-            return (result ? decodeURIComponent(result[1]) : "");
-        },
+
   
         returnWupServerUrl: (wupServerUrl, customerCID, isHybrid) => {
             if (!customerCID || !wupServerUrl) return '';
