@@ -1,18 +1,28 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.d511fe9f.css",
-    "main.js": "/build/static/js/main.e09bfe81.js",
-    "static/media/GoldNew.png": "/build/static/media/GoldNew.c75485a1c175871eaed3.png",
-    "static/media/PlatinumNew.png": "/build/static/media/PlatinumNew.f659938cbac19b8910ec.png",
-    "static/media/ATO.jpg": "/build/static/media/ATO.71c7cb141215625664c9.jpg",
-    "static/media/biocatch-svg.svg": "/build/static/media/biocatch-svg.ffa7a3e7b589982f2d96e2a4d762aed5.svg",
-    "static/media/AO.jpg": "/build/static/media/AO.a70f08ca92e8d51eed76.jpg",
-    "index.html": "/build/index.html",
-    "main.d511fe9f.css.map": "/build/static/css/main.d511fe9f.css.map",
-    "main.e09bfe81.js.map": "/build/static/js/main.e09bfe81.js.map"
+    "main.css": "/bnzapp/static/css/main.a24f4f30.css",
+    "main.js": "/bnzapp/static/js/main.fbeaff13.js",
+    "static/media/icon1.jpg": "/bnzapp/static/media/icon1.2af4bd381d0d2b9c5d4b.jpg",
+    "static/media/youwealth.jpg": "/bnzapp/static/media/youwealth.6b4444684bfc9b2bd293.jpg",
+    "static/media/GoldNew.png": "/bnzapp/static/media/GoldNew.c75485a1c175871eaed3.png",
+    "static/media/bnz_logo.svg.png": "/bnzapp/static/media/bnz_logo.svg.4676574a6996a7e54f65.png",
+    "static/media/PlatinumNew.png": "/bnzapp/static/media/PlatinumNew.f659938cbac19b8910ec.png",
+    "static/media/icon3.jpg": "/bnzapp/static/media/icon3.e316425be9506afed047.jpg",
+    "static/media/savings.jpg": "/bnzapp/static/media/savings.bdb7299c9a85b6de92be.jpg",
+    "static/media/icon2.jpg": "/bnzapp/static/media/icon2.ff62b1c32411b85ba7a3.jpg",
+    "static/media/ATO.jpg": "/bnzapp/static/media/ATO.71c7cb141215625664c9.jpg",
+    "static/media/biocatch-svg.svg": "/bnzapp/static/media/biocatch-svg.ffa7a3e7b589982f2d96e2a4d762aed5.svg",
+    "static/media/AO.jpg": "/bnzapp/static/media/AO.a70f08ca92e8d51eed76.jpg",
+    "static/media/icon5.webp": "/bnzapp/static/media/icon5.87ddfac127ca7945a799.webp",
+    "static/media/term-deposit.jpg": "/bnzapp/static/media/term-deposit.d368139b07c99d45d344.jpg",
+    "static/media/icon6.jpeg": "/bnzapp/static/media/icon6.2a69b0a54f612a370356.jpeg",
+    "static/media/totalmoney-loan.jpg": "/bnzapp/static/media/totalmoney-loan.7b2abfe36329d26bbad9.jpg",
+    "index.html": "/bnzapp/index.html",
+    "main.a24f4f30.css.map": "/bnzapp/static/css/main.a24f4f30.css.map",
+    "main.fbeaff13.js.map": "/bnzapp/static/js/main.fbeaff13.js.map"
   },
   "entrypoints": [
-    "static/css/main.d511fe9f.css",
-    "static/js/main.e09bfe81.js"
+    "static/css/main.a24f4f30.css",
+    "static/js/main.fbeaff13.js"
   ]
 }
