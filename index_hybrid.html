@@ -1,0 +1,161 @@
+<html lang="en">
+
+<head>
+  <style>
+    /* Make the iframe 80% of the viewport's width and height */
+    #myIframe {
+      width: 80vw; /* 80% of the viewport width */
+      height: 80vh; /* 80% of the viewport height */
+      border: 1px solid black;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+  <meta name="wup_url" content='https://wup-bladetest.au.v2.customers.biocatch.com/api/v4/wup?cid=bladetest'>
+  <meta name="customerID" content='bladetest'>
+  <meta name="log_url" content='https://log-bladetest.au.v2.customers.biocatch.com/api/v1/sendLogs'>
+
+
+  <meta name="customerSessionId" content="1234TEST5678454sdgfgdhtrttt" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+  <title>BioCatch Sample React App</title>
+  <meta http-equiv="Content-Security-Policy" content="" />
+  
+  <!-- If you want to load the cdapi on app load - use this functionality -->
+   <script>
+
+    function loadingBridge(){
+
+
+      const script = document.createElement('script');
+      script.src = 'https://bcdn-god.we-stats.com/scripts/bdf86f39/5955b48_jsBridge_test.js';
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = () => {
+        console.log(`Script  loaded successfully`);
+        console.log(window.cdApi);
+
+      };
+
+      script.onerror = () => {
+        console.error(`Error loading script ""`);
+      };
+  
+      
+      
+    }
+
+    // Function to set or update meta tags
+function setMetaTag(name, content) {
+  let metaTag = document.querySelector(`meta[name="${name}"]`);
+
+  // If meta tag doesn't exist, create it
+  if (!metaTag) {
+      metaTag = document.createElement('meta');
+      metaTag.setAttribute('name', name);
+      document.head.appendChild(metaTag);
+  }
+
+  // Set the content of the meta tag
+  metaTag.setAttribute('content', content);
+}
+
+    if (/Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor)) {
+      // Running in Chrome Browser
+      // Set 'agent_type' and 'collection_mode' meta tags
+    //setMetaTag('agent_type', 'primary');
+    //setMetaTag('collection_mode', 'full');
+
+      const script = document.createElement('script');
+      script.src = 'https://bcdn-god.we-stats.com/scripts/bdf86f39/5955b48.js';
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = () => {
+        // Script loaded successfully
+        console.log(`Script  loaded successfully`);
+        console.log(window.cdApi);
+        window.cdApi.setCustomerSessionId(generateCSID());
+        window.cdApi.changeContext(getCurrentContext());
+        window.cdApi.setCustomerBrand(getBrand());
+      };
+
+      script.onerror = () => {
+        // Script failed to load
+        console.error(`Error loading script ""`);
+        //setScriptLoaded('error');
+      };
+
+    } else if (/iPad|iPhone|iPod/.test(navigator.platform) && !window.MSStream) {
+      //setMetaTag('agent_type', 'secondary');
+      //setMetaTag('collection_mode', 'lean');
+      loadingBridge();
+      const script = document.createElement('script');
+      script.src = 'https://bcdn-god.we-stats.com/scripts/bdf86f39/5955b48_slave_test.js';
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = () => {
+        // Script loaded successfully
+        console.log(`Script  loaded successfully`);
+        console.log(window.cdApi);
+       // setScriptLoaded("main");
+       
+
+      };
+
+      script.onerror = () => {
+        // Script failed to load
+        console.error(`Error loading script ""`);
+        //setScriptLoaded('error');
+      };
+    } else {
+
+    }
+   </script>
+  <script>
+
+    function getBrand() {
+      return '_RETAIL';
+    }
+
+    function getCurrentContext(){
+      return '_Home-Page';
+    }
+
+    function generateCSID() {
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+          const r = (crypto.getRandomValues(new Uint8Array(1))[0] & 15) >> (c === 'x' ? 0 : 4);
+          return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+      });
+  }
+    function xyzbc() {
+      try {
+        window.cdApi.setCustomerSessionId(generateCSID());
+        window.cdApi.changeContext(getCurrentContext());
+        window.cdApi.setCustomerBrand(getBrand());
+      } catch (e) {
+        console.log(e);
+      }
+    }
+
+    // Function to add the input element
+
+
+  </script>
+  <!--<script type="text/javascript" src="https://bcdn-god.we-stats.com/scripts/bdf86f39/bnz_hyb_test.js" async onload="xyzbc()"></script>-->
+  <!--<script type="text/javascript" src="https://bcdn-god.we-stats.com/scripts/bdf86f39/5955b48.js" async onload="xyzbc()"></script> -->
+</head>
+
+<body>
+  <div id="root"></div>
+
+
+</body>
+
+</html>

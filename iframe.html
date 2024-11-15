@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="customerSessionId" content="1234TEST5678" />
+    <script>
+      function xyzbc() {
+        try {
+          window.cdApi.changeContext('First_IFRAME_Context');
+          // Set the brand for Account Opening only.
+        } catch (e) {
+          console.log(e);
+        }
+      }
+      </script>
+      <script src="./hybrid.js" async onload="xyzbc()"></script>
+  </head>
+
+  <body>
+    <div>Hello world 😁!</div>
+    <div>(This is iFrame from the same domain)</div>
+    <div>
+      <form>
+        <label for="username">Username:</label><br />
+        <input
+          type="text"
+          id="login-username"
+          name="username"
+          value=""
+          placeholder="username"
+        /><br />
+        <label for="password">Password:</label><br />
+        <input
+          type="text"
+          id="login-password"
+          name="password"
+          value=""
+          placeholder="password"
+        /><br /><br />
+        <input id="SubmitLogin" type="submit" value="Submit" />
+      </form>
+      <button type="button" id="DemoButton">Click Me!</button>
+    </div>
+  </body>
+</html>
