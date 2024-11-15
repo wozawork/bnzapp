@@ -1,0 +1,11 @@
+
+.TextInput-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.TextInput-container input {
+    color: #a19e9e;
+}

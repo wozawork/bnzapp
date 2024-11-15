@@ -1,0 +1,35 @@
+.FeaturedCreditCards-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.creditCardImg {
+  max-width: 300px;
+  border-radius: 1rem;
+  border: solid #ffffff8f 1px;
+  box-shadow: 0px 4px 20px 8px rgb(0 0 0 / 17%);
+}
+
+.creditCardImg:hover {
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.409);
+}
+
+.creditCardImg.gold {
+  border-color: #ffe55896;
+}
+
+.creditCardsImg-Container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.innerCreditCard-Paragraph {
+  margin: auto;
+}
+
+.Card-Container {
+  width: min-content;
+}

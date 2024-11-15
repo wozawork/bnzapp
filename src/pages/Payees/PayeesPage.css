@@ -1,0 +1,92 @@
+
+
+.payees-container {
+  padding: 20px;
+  width: 50%;
+  background-color: #002655; /* Optional for visibility */
+  border-radius: 8px; /* Optional for design */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  margin-top: 10%; /* Adjust this to center vertically */
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.search-button {
+  padding: 8px 16px;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.payees-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payees-table th, .payees-table td {
+  border: 0px solid #ddd;
+  padding: 8px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.payee-info {
+  display: flex;
+  align-items: center;
+}
+
+.payee-image {
+  border-radius: 5%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.pay-button {
+  background-color:#002655;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.delete-button {
+  background-color: #002655;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.pagination-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.pagination-button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.rows-per-page-select {
+  padding: 8px;
+}

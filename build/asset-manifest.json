@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/build/static/css/main.d511fe9f.css",
+    "main.js": "/build/static/js/main.e09bfe81.js",
+    "static/media/GoldNew.png": "/build/static/media/GoldNew.c75485a1c175871eaed3.png",
+    "static/media/PlatinumNew.png": "/build/static/media/PlatinumNew.f659938cbac19b8910ec.png",
+    "static/media/ATO.jpg": "/build/static/media/ATO.71c7cb141215625664c9.jpg",
+    "static/media/biocatch-svg.svg": "/build/static/media/biocatch-svg.ffa7a3e7b589982f2d96e2a4d762aed5.svg",
+    "static/media/AO.jpg": "/build/static/media/AO.a70f08ca92e8d51eed76.jpg",
+    "index.html": "/build/index.html",
+    "main.d511fe9f.css.map": "/build/static/css/main.d511fe9f.css.map",
+    "main.e09bfe81.js.map": "/build/static/js/main.e09bfe81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d511fe9f.css",
+    "static/js/main.e09bfe81.js"
+  ]
+}

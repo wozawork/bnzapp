@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+  <style>
+    /* Make the iframe 80% of the viewport's width and height */
+    #myIframe {
+      width: 80vw; /* 80% of the viewport width */
+      height: 80vh; /* 80% of the viewport height */
+      border: 1px solid black;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+  <meta name="wup_url" content='https://wup-bladetest.au.v2.customers.biocatch.com/api/v4/wup?cid=bladetest'>
+  <meta name="customerID" content='bladetest'>
+  <meta name="log_url" content='https://log-bladetest.au.v2.customers.biocatch.com/api/v1/sendLogs'>
+
+
+  <meta name="customerSessionId" content="1234TEST5678454sdgfgdhtrttt" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+  <title>BioCatch Sample React App</title>
+  <meta http-equiv="Content-Security-Policy" content="" />
+  
+  <script>
+
+    function getBrand() {
+      return '_RETAIL';
+    }
+
+    function getCurrentContext(){
+      return '_Home-Page';
+    }
+
+    function generateCSID() {
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+          const r = (crypto.getRandomValues(new Uint8Array(1))[0] & 15) >> (c === 'x' ? 0 : 4);
+          return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+      });
+  }
+    function xyzbc() {
+      try {
+        window.cdApi.setCustomerSessionId(generateCSID());
+        window.cdApi.changeContext(getCurrentContext());
+        window.cdApi.setCustomerBrand(getBrand());
+      } catch (e) {
+        console.log(e);
+      }
+    }
+
+    // Function to add the input element
+
+
+  </script>
+
+  <script>
+    function injectIsHybridMetaTag() {
+      const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.platform) && !window.MSStream;
+  
+      // Create the meta tag
+      const metaTag = document.createElement('meta');
+      metaTag.name = "isHybrid";
+      const h1Element = document.getElementById('bnz-demo-title');
+  
+      // Set content based on browser/platform
+      if (isChrome) {
+          metaTag.content = "false";
+          //h1Element.innerText = "BNZ Demo - Chrome";
+      } else if (isIOS) {
+          metaTag.content = "true";
+          //h1Element.innerText = "BNZ Demo - Mobile";
+      } else {
+          metaTag.content = "unknown"; // Optional: for unsupported platforms
+      }
+  
+      // Append the meta tag to the head
+      document.head.appendChild(metaTag);
+      console.log(`Meta tag added with content: ${metaTag.content}`);
+  }
+  
+  // Call the function to inject the meta tag
+  injectIsHybridMetaTag();
+  
+  </script>
+
+  <!--<script type="text/javascript" src="%PUBLIC_URL%/5955b48_onejs.js" async onload="xyzbc()"></script> -->
+  <script type="text/javascript" src="https://bcdn-god.we-stats.com/scripts/12f21952/12f21952.js" async onload="xyzbc()"></script> 
+</head>
+
+<body>
+  <div id="root"></div>
+
+<div>
+  <label for="paymentamount">Payment Amount (lowercase):</label>
+  <input type="text" id="paymentamount" name="paymentamount">
+
+  <br><br>
+
+  <label for="PaymentAmount">Payment Amount (capitalized):</label>
+  <input type="text" id="PaymentAmount" name="PaymentAmount">
+</div>
+</body>
+
+</html>
+
+

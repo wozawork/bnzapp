@@ -1,0 +1,86 @@
+.MyAccount-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    margin: auto;
+}
+
+.MyAccount-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    border-bottom: solid #fff 1px;
+    align-self: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.MyAccount-header-left {
+    border-right: solid #fff 1px;
+    padding: 1rem;
+    height: 45px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.MyAccount-header-logout {
+    border-left: solid #fff 1px;
+    padding: 1rem;
+    height: 45px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.MyAccount-header-right {
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.balance-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.AccountOver-header-balance {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.MyAccount-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.MyAccount-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.AccountOverview-content-right {
+    display: flex;
+    margin: auto;
+}
+
+.user-action-btn {
+    display: flex;
+    gap: 0.5rem;
+}
+.displayFlex {
+    display: flex;
+    flex-direction: column;
+}

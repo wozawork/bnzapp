@@ -1,0 +1,45 @@
+.title {
+  padding: 0 5rem;
+}
+.title:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+
+.MainAppBar-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.MainAppBar-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between MenuIcon and Menu text */
+}
+
+
+.drawer-container {
+  width: 250px;
+  background-color: #f5f5f5; /* Light background similar to the image */
+}
+
+.MuiListItemText-root {
+  color: #002655; /* Dark blue color for text */
+}
+
+.MuiListItemIcon-root {
+  color: #002655; /* Dark blue color for icons */
+}
+
+.MuiDrawer-paper {
+  background-color: #fff; /* White background */
+}
+
+.MuiTypography-root {
+  color: #002655; /* Set the color of the app bar text */
+}
