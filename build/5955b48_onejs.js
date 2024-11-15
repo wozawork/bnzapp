@@ -17,6 +17,11 @@
             const elem = document.querySelector(`meta[name="${name}"]`);
             return elem ? elem.getAttribute('content') : '';
         },
+
+        getCookie: (key) => {
+            let result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').exec(document.cookie);
+            return (result ? decodeURIComponent(result[1]) : "");
+        },
   
         returnWupServerUrl: (wupServerUrl, customerCID, isHybrid) => {
             if (!customerCID || !wupServerUrl) return '';
@@ -32,9 +37,14 @@
             },
         }),
   
-        getCustomerSessionID: function (callback) {
-            callback(this.getMetatagContent('customerSessionId'));
+        //getCustomerSessionID: function (callback) {
+        //    callback(this.getMetatagContent('customerSessionId'));
+        //},
+
+        getCustomerSessionID: function(callback) {
+            callback(this.getCookie('customerSessionId'));
         },
+
   
         getConfigurations: function (callback) {
             const isHybrid = this.getMetatagContent('isHybrid');
