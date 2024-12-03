@@ -43,9 +43,13 @@
   }
     function xyzbc() {
       try {
+
+        //session level
         window.cdApi.setCustomerSessionId(generateCSID());
-        window.cdApi.changeContext(getCurrentContext());
         window.cdApi.setCustomerBrand(getBrand());
+
+        //context level
+        window.cdApi.changeContext(getCurrentContext());
       } catch (e) {
         console.log(e);
       }
